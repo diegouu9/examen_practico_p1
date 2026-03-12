@@ -2,20 +2,20 @@
     box-sizing: border-box
 }
  
+body {
+  background-color: rgba(211, 211, 179, 0.773);
+}
+ 
 .menu-links {
   display: none;
   width: 100%;
+ 
 }
  
 #menuToggle:checked ~ .menu-links {
   display: block;
 }
  
-@media (min-width: 992px) {
-  .menu-links {
-    display: flex !important;
-  }
-  label[for="menuToggle"] {
-    display: none;
-  }
+#content {
+  margin: 20px;
 }
