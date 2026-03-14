@@ -1,21 +1,137 @@
+
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
- 
+
 body {
   background-color: rgba(211, 211, 179, 0.773);
+  font-family: 'Segoe UI', sans-serif;
 }
- 
-.menu-links {
-  display: none;
-  width: 100%;
- 
+
+#sidebar {
+  width: 250px;
 }
- 
-#menuToggle:checked ~ .menu-links {
-  display: block;
+
+.hero-btn {
+  background-color: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 28px;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.2s ease;
 }
- 
+
+.hero-btn:hover {
+  background-color: #1558b0;
+  color: #fff;
+}
+
 #content {
   margin: 20px;
+}
+
+#content .card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.2s ease;
+}
+
+#content .card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+#content .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+#content .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  letter-spacing: 0.01em;
+}
+
+#content .card-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#content .list-group-item {
+  font-size: 0.85rem;
+  color: #444;
+  border-left: none;
+  border-right: none;
+}
+
+#content .card-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: none;
+  padding: 6px 14px;
+  border: 1.5px solid #1a73e8;
+  border-radius: 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#content .card-link:hover {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #content {
+    margin: 30px;
+  }
+
+  #content .card-img-top {
+    height: 200px;
+  }
+
+  #content .card-title {
+    font-size: 1.1rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 11px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #content {
+    margin: 40px 60px;
+  }
+
+  #content .card-img-top {
+    height: 240px;
+  }
+
+  #content .card-title {
+    font-size: 1.25rem;
+  }
+
+  #content .card-text {
+    font-size: 0.95rem;
+  }
+
+  #content .card-link {
+    font-size: 0.9rem;
+    padding: 7px 16px;
+  }
+
+  .hero-btn {
+    font-size: 1.05rem;
+    padding: 12px 34px;
+  }
 }

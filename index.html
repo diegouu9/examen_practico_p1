@@ -1,67 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Producto Digital</title>
 </head>
- 
+
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">GunsKit</a>
- 
-                <input type="checkbox" id="menuToggle" style="display:none">
-                <label for="menuToggle" class="navbar-toggler border-0">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BuyGeckos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                    aria-controls="sidebar">
                     <span class="navbar-toggler-icon"></span>
-                </label>
- 
-                <div class="menu-links">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="starting.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="products.html">Producto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="prices.html">Precios</a>
-                        </li>
-                    </ul>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
- 
-    <div class="row justify-content-center" id="content">
-        <div class="col-12 col-md-8 col-lg-6">
- 
-            <div class="card">
-                <img src="https://placehold.co/600x400?text=FocusKit" class="card-img-top" alt="FocusKit">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h1 class="hero-title">Encuentra tu Gecko Ideal</h1>
+                    <p class="hero-subtitle">Vendemos geckos saludables y bien cuidados,
+                        ideales para principiantes y amantes de reptiles.</p>
+                    <a href="#content" class="btn hero-btn">Ver geckos</a>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <img src="img/imagen (1).png" alt="Geckos" class="hero-img img-fluid">
                 </div>
             </div>
- 
+        </div>
+    </section>
+
+    <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">GunsKit</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white px-3 py-2" href="starting.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white px-3 py-2" href="products.html">Producto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white px-3 py-2" href="prices.html">Precios</a>
+                </li>
+            </ul>
         </div>
     </div>
- 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+
+    <div class="row justify-content-center" id="content">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="card">
+                <img src="img/imagen (2).png" class="card-img-top" alt="Gecko Leopardo">
+                <div class="card-body">
+                    <h5 class="card-title">Gecko Leopardo</h5>
+                    <p class="card-text">Uno de los geckos más populares como mascota.
+                        Fácil de cuidar y perfecto para principiantes.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Edad: 3 meses</li>
+                    <li class="list-group-item">Dieta: Insectos</li>
+                    <li class="list-group-item">Temperamento: Tranquilo</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Ver detalles</a>
+                    <a href="#" class="card-link">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-6 mt-4 mt-lg-0">
+            <div class="card">
+                <img src="img/imagen.png" class="card-img-top" alt="Gecko Crestado">
+                <div class="card-body">
+                    <h5 class="card-title">Gecko Crestado</h5>
+                    <p class="card-text">Un gecko exótico y llamativo,
+                        ideal para quienes buscan una mascota diferente.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Edad: 4 meses</li>
+                    <li class="list-group-item">Dieta: Frutas e insectos</li>
+                    <li class="list-group-item">Temperamento: Activo</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Ver detalles</a>
+                    <a href="#" class="card-link">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+    <footer class="bg-body-secondary border-top py-4 mt-4 px-4">
+        <div class="row g-4 mb-4">
+
+            <div class="col-md-4">
+                <p class="text-uppercase fw-semibold small mb-3" style="letter-spacing: .05em;">Empresa</p>
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <li><a href="#" class="text-secondary text-decoration-none small">Sobre nosotros</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none small">Servicios</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none small">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <p class="text-uppercase fw-semibold small mb-3" style="letter-spacing: .05em;">Soporte</p>
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <li><a href="#" class="text-secondary text-decoration-none small">Centro de ayuda</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none small">Contacto</a></li>
+                    <li><a class="text-secondary small disabled opacity-50">Deshabilitado</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <p class="text-uppercase fw-semibold small mb-3" style="letter-spacing: .05em;">BuyGeckos</p>
+                <p class="text-secondary small">Tienda especializada en geckos y reptiles criados con cuidado.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Ver geckos</a>
+            </div>
+
+        </div>
+
+        <div class="border-top pt-3 d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <p class="text-body-tertiary small mb-0">© 2026 BuyGeckos. Todos los derechos reservados.</p>
+            <div class="d-flex gap-3">
+                <a href="#" class="text-body-tertiary text-decoration-none small">Privacidad</a>
+                <a href="#" class="text-body-tertiary text-decoration-none small">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
- 
+
 </html>
